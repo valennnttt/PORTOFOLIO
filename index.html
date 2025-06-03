@@ -9,16 +9,16 @@
 <body>
   <header>
     <nav class="navbar">
-      <h1 class="logo">Portofolio</h1>
-      <ul class="nav-links">
-        <li><a href="#about" class="btn-nav">About</a></li>
-        <li><a href="#galeri" class="btn-nav">Galeri</a></li>
-        <li><a href="#project" class="btn-nav">Project</a></li>
-        <li><a href="#kontak" class="btn-nav">Kontak</a></li>
-      </ul>
-    </nav>
+  <h1 class="logo">Portofolio</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="btn-nav">About</a></li>
+    <li><a href="#galeri" class="btn-nav">Galeri</a></li>
+    <li><a href="#project" class="btn-nav">Project</a></li>
+    <li><a href="#kontak" class="btn-nav">Kontak</a></li>
+  </ul>
+</nav>
   </header>
-
   <section class="hero" id="tentang">
     <img src="https://i.imgur.com/NxtyU03.jpeg" alt="Foto Valen" class="hero-img" />
     <div class="hero-text">
@@ -107,5 +107,11 @@
       <li><strong>Portofolio Web:</strong> Situs ini sebagai showcase karya saya.</li>
     </ul>
   </section>
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
