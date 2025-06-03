@@ -221,33 +221,40 @@ footer {
 
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
   color: white;
 }
 
 @media (max-width: 768px) {
+  .navbar {
+  position: relative;
+  }
+
+  .menu-toggle {
+  display: block;
+  }
+
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #2a2a2a;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
+  display: none;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
   .nav-links li a {
-    padding: 15px;
-    border-bottom: 1px solid #444;
+    padding: 12px;
+    display: block;
   }
 }
