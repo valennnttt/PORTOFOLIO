@@ -192,7 +192,6 @@ footer {
   color: #999;
 }
 
-/* Konten Section Umum */
 .content-section {
   padding: 60px 20px;
   max-width: 900px;
@@ -216,7 +215,6 @@ footer {
   line-height: 1.6;
 }
 
-/* Galeri */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -230,4 +228,37 @@ footer {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links li a {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+  }
 }
